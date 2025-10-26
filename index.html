@@ -131,17 +131,17 @@
         <div class="flex flex-wrap gap-4 items-end">
           <div class="grow">
             <label class="block text-sm text-tg-dim mb-1"
-              >Cliente parceiro</label
+              ></label
             >
             <label
               class="switch relative inline-flex items-center cursor-pointer select-none"
             >
-              <input id="isPartner" type="checkbox" class="sr-only" />
+              <text id="isPartner" class="sr-only" />
               <span
                 class="w-10 h-6 rounded-full bg-gray-600 transition relative"
               ></span>
             </label>
-            <span class="ml-3 text-sm">Desconto de 15% no valor final</span>
+            <span class="ml-3 text-sm"></span>
           </div>
           <div>
             <label for="kmExterno" class="block text-sm text-tg-dim mb-1"
@@ -258,59 +258,23 @@
                 id: "combog",
                 label: "Combo Grande",
                 type: "qty",
-                price: 10000,
+                price: 8000,
               },
             ],
           },
           {
-            id: "comidas",
-            title: "Comidas",
+            id: "avulsos",
+            title: "Avulsos",
             items: [
               {
-                id: "pizza",
-                label: "Pizza",
+                id: "comida_avulsa",
+                label: "Comida Avulsa",
                 type: "qty",
                 price: 500,
               },
               {
-                id: "panqueca",
-                label: "Panqueca",
-                type: "qty",
-                price: 500,
-              },
-              {
-                id: "hamburguer",
-                label: "Hamburger",
-                type: "qty",
-                price: 500,
-              },
-              {
-                id: "bolo",
-                label: "Bolo Vermelho",
-                type: "qty",
-                price: 500,
-              },
-            ],
-          },
-          {
-            id: "comidas",
-            title: "Comidas",
-            items: [
-              {
-                id: "milkshake",
-                label: "Milkshake",
-                type: "qty",
-                price: 500,
-              },
-              {
-                id: "chopp",
-                label: "Chopp",
-                type: "qty",
-                price: 500,
-              },
-              {
-                id: "coca",
-                label: "Coca-Cola",
+                id: "bebida_avulsa",
+                label: "Bebida Avulsa",
                 type: "qty",
                 price: 500,
               },
@@ -320,7 +284,7 @@
         // preço por quilômetro do atendimento externo
         externoKmPrice: 500,
         // desconto para parceiros
-        partnerDiscount: 0.15,
+        partnerDiscount: 0.10,
         // espaço para taxas adicionais se quiser no futuro
         feesPercent: 0,
       };
