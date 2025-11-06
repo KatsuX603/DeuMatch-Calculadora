@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
@@ -592,12 +592,14 @@
     ========================================================== */
       function makeShortSummary() {
         const total = $("#grandTotal").textContent;
+        const porcen = $("#fees").textContent;
         const partner = state.isPartner ? "Sim" : "Não";
         return [
           `Orçamento Deu Match!`,
           `Parceiro: ${partner}`,
           `KM externo: ${state.km || 0} km`,
           `Total: ${total}`,
+          `Porcentagem Restaurante: ${porcen}`,
         ].join("\n");
       }
 
@@ -686,3 +688,4 @@
     </script>
   </body>
 </html>
+
